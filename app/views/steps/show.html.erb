@@ -1,2 +1,9 @@
-<h1>Steps#show</h1>
-<p>Find me in app/views/steps/show.html.erb</p>
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @step.name %>
+</p>
+
+<%= link_to 'Edit', edit_list_step_path(@list, @step) %> |
+<%= link_to 'Back', list_steps_path(@list) %>
